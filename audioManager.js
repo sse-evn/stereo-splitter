@@ -613,7 +613,13 @@ export class AudioManager {
             };
         });
 
-        for (const stream of preliminaryStreams) {
+        const orderedForResolution = [...preliminaryStreams].sort((a, b) => {
+            const aKnown = this._matcher.hasActiveStream(a.index) ? 0 : 1;
+            const bKnown = this._matcher.hasActiveStream(b.index) ? 0 : 1;
+            return aKnown - bKnown;
+        });
+
+        for (const stream of orderedForResolution) {
             this._recordOriginalSinkIfNeeded(stream);
 
             const desiredMode = this._matcher.resolveStreamMode(

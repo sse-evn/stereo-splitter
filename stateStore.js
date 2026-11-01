@@ -54,10 +54,6 @@ export class StateStore {
                 'firefox::site:kodik': MODES.RIGHT,
                 'firefox::site:movie-player': MODES.RIGHT,
                 'firefox::pattern:kodik player': MODES.RIGHT,
-                'firefox::site:youtube': MODES.LEFT,
-                'firefox::site:youtube-music': MODES.LEFT,
-                'firefox::suffix:youtube': MODES.LEFT,
-                'firefox::pattern:тетрадь смерти [тв]-s#-e#-мега-аниме': MODES.RIGHT,
             },
         };
     }
@@ -233,32 +229,32 @@ export class StateStore {
         this.scheduleSave();
     }
 
-    setStreamRule(appKey, mediaKey, signatures, mode, isMultiStreamSplit = false) {
+    setStreamRule(
+        appKey,
+        mediaKey,
+        signatures,
+        mode,
+        isMultiStreamSplit = false,
+        conflictingSignatures = []
+    ) {
         if (!appKey)
             return;
 
         const sigList = Array.isArray(signatures) ? signatures : [];
-        const isYouTube = sigList.some(
-            s => s === 'site:youtube' || s === 'site:youtube-music' || s === 'suffix:youtube'
-        );
-
-        if (isYouTube) {
-            const prefix = `${appKey}::`;
-            for (const key of Object.keys(this._state.streamMediaRules)) {
-                if (key.startsWith(prefix) && key.includes('youtube'))
-                    delete this._state.streamMediaRules[key];
-            }
-            for (const key of Object.keys(this._state.streamSignatureRules)) {
-                if (key.startsWith(`${prefix}pattern:`) && key.includes('youtube'))
-                    delete this._state.streamSignatureRules[key];
-            }
-        }
+        const conflictList = Array.isArray(conflictingSignatures)
+            ? conflictingSignatures
+            : [];
 
         if (mediaKey)
             this._state.streamMediaRules[`${appKey}::${mediaKey}`] = mode;
 
+        for (const conflictSig of conflictList) {
+            if (conflictSig)
+                delete this._state.streamSignatureRules[`${appKey}::${conflictSig}`];
+        }
+
         for (const sig of sigList) {
-            if (sig)
+            if (sig && !conflictList.includes(sig))
                 this._state.streamSignatureRules[`${appKey}::${sig}`] = mode;
         }
 
@@ -277,11 +273,6 @@ export class StateStore {
             this._state.appSplitMode[appKey] = true;
         } else {
             delete this._state.appSplitMode[appKey];
-        }
-
-        if (!isYouTube) {
-            this._state.appRules[appKey] = mode;
-        } else if (!this._state.appSplitMode[appKey]) {
             this._state.appRules[appKey] = mode;
         }
 
