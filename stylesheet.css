@@ -1,0 +1,347 @@
+.stereo-splitter-header-actions {
+    spacing: 6px;
+}
+
+.stereo-splitter-header-btn {
+    border-radius: 99px;
+    padding: 5px 11px;
+    font-size: 11px;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.10);
+    color: rgba(255, 255, 255, 0.90);
+    border: none;
+    transition-duration: 120ms;
+}
+
+.stereo-splitter-header-icon-btn {
+    padding: 5px 8px;
+}
+
+.stereo-splitter-header-btn:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+}
+
+.stereo-splitter-header-btn:active {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.stereo-splitter-light .stereo-splitter-header-btn {
+    background-color: rgba(0, 0, 0, 0.07);
+    color: #282828;
+}
+
+.stereo-splitter-light .stereo-splitter-header-btn:hover {
+    background-color: rgba(0, 0, 0, 0.13);
+    color: #000000;
+}
+
+.stereo-splitter-section-header-item {
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+.stereo-splitter-section-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.stereo-splitter-light .stereo-splitter-section-title {
+    color: rgba(40, 40, 40, 0.60);
+}
+
+.stereo-splitter-device-item {
+    border-radius: 8px;
+}
+
+.stereo-splitter-streams-scroll {
+    max-height: 320px;
+}
+
+.stereo-splitter-streams-box {
+    spacing: 6px;
+    padding: 2px 12px 8px 12px;
+}
+
+.stereo-splitter-app-card {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 10px 12px;
+    spacing: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.stereo-splitter-light .stereo-splitter-app-card {
+    background-color: rgba(0, 0, 0, 0.045);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.stereo-splitter-stream-block {
+    spacing: 8px;
+}
+
+.stereo-splitter-group-header {
+    spacing: 8px;
+    padding-bottom: 4px;
+}
+
+.stereo-splitter-substream-block {
+    spacing: 6px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stereo-splitter-light .stereo-splitter-substream-block {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.stereo-splitter-top-line {
+    spacing: 8px;
+}
+
+.stereo-splitter-app-icon {
+    icon-size: 18px;
+}
+
+.stereo-splitter-stream-icon {
+    icon-size: 14px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.stereo-splitter-light .stereo-splitter-stream-icon {
+    color: rgba(40, 40, 40, 0.65);
+}
+
+.stereo-splitter-info-box {
+    spacing: 1px;
+}
+
+.stereo-splitter-app-title {
+    font-weight: 700;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.stereo-splitter-light .stereo-splitter-app-title {
+    color: #202024;
+}
+
+.stereo-splitter-stream-title {
+    font-weight: 600;
+    font-size: 12.5px;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.stereo-splitter-light .stereo-splitter-stream-title {
+    color: #242428;
+}
+
+.stereo-splitter-media-subtitle {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.stereo-splitter-light .stereo-splitter-media-subtitle {
+    color: rgba(40, 40, 40, 0.62);
+}
+
+.stereo-splitter-all-label {
+    font-size: 10.5px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.55);
+    margin-left: 4px;
+}
+
+.stereo-splitter-light .stereo-splitter-all-label {
+    color: rgba(40, 40, 40, 0.60);
+}
+
+.stereo-splitter-mode-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 6px;
+}
+
+.stereo-splitter-mode-badge.badge-left {
+    background-color: rgba(119, 100, 216, 0.24);
+    color: #c5baff;
+}
+
+.stereo-splitter-light .stereo-splitter-mode-badge.badge-left {
+    background-color: rgba(119, 100, 216, 0.16);
+    color: #513cb3;
+}
+
+.stereo-splitter-mode-badge.badge-right {
+    background-color: rgba(53, 132, 228, 0.24);
+    color: #99c8ff;
+}
+
+.stereo-splitter-light .stereo-splitter-mode-badge.badge-right {
+    background-color: rgba(53, 132, 228, 0.16);
+    color: #1659b0;
+}
+
+.stereo-splitter-mode-badge.badge-stereo {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.stereo-splitter-light .stereo-splitter-mode-badge.badge-stereo {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #303036;
+}
+
+.stereo-splitter-mode-badge.badge-split {
+    background-color: rgba(245, 158, 11, 0.22);
+    color: #fcd34d;
+}
+
+.stereo-splitter-light .stereo-splitter-mode-badge.badge-split {
+    background-color: rgba(217, 119, 6, 0.16);
+    color: #9a4406;
+}
+
+.stereo-splitter-btn-group {
+    spacing: 4px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.stereo-splitter-light .stereo-splitter-btn-group {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.stereo-splitter-mode-btn {
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.78);
+    background-color: transparent;
+    border: none;
+    transition-duration: 120ms;
+}
+
+.stereo-splitter-mode-btn:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+    color: #ffffff;
+}
+
+.stereo-splitter-light .stereo-splitter-mode-btn {
+    color: #323238;
+}
+
+.stereo-splitter-light .stereo-splitter-mode-btn:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #000000;
+}
+
+.stereo-splitter-mini-btn-group {
+    spacing: 2px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 6px;
+    padding: 2px;
+}
+
+.stereo-splitter-light .stereo-splitter-mini-btn-group {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.stereo-splitter-mini-btn {
+    border-radius: 5px;
+    padding: 3px 7px;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.78);
+    background-color: transparent;
+    border: none;
+    transition-duration: 120ms;
+}
+
+.stereo-splitter-mini-btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+.stereo-splitter-light .stereo-splitter-mini-btn {
+    color: #323238;
+}
+
+.stereo-splitter-light .stereo-splitter-mini-btn:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #000000;
+}
+
+.stereo-splitter-mode-btn.active-left,
+.stereo-splitter-mini-btn.active-left {
+    background-color: #7764d8;
+    color: #ffffff;
+}
+
+.stereo-splitter-mode-btn.active-left:hover,
+.stereo-splitter-mini-btn.active-left:hover {
+    background-color: #8472e0;
+    color: #ffffff;
+}
+
+.stereo-splitter-mode-btn.active-right,
+.stereo-splitter-mini-btn.active-right {
+    background-color: #3584e4;
+    color: #ffffff;
+}
+
+.stereo-splitter-mode-btn.active-right:hover,
+.stereo-splitter-mini-btn.active-right {
+    background-color: #4692ed;
+    color: #ffffff;
+}
+
+.stereo-splitter-mode-btn.active-stereo,
+.stereo-splitter-mini-btn.active-stereo {
+    background-color: rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+}
+
+.stereo-splitter-mode-btn.active-stereo:hover,
+.stereo-splitter-mini-btn.active-stereo:hover {
+    background-color: rgba(255, 255, 255, 0.28);
+    color: #ffffff;
+}
+
+.stereo-splitter-light .stereo-splitter-mode-btn.active-stereo,
+.stereo-splitter-light .stereo-splitter-mini-btn.active-stereo {
+    background-color: #3d3d46;
+    color: #ffffff;
+}
+
+.stereo-splitter-light .stereo-splitter-mode-btn.active-stereo:hover,
+.stereo-splitter-light .stereo-splitter-mini-btn.active-stereo:hover {
+    background-color: #2c2c34;
+    color: #ffffff;
+}
+
+.stereo-splitter-empty-box {
+    padding: 18px 14px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 10px;
+}
+
+.stereo-splitter-light .stereo-splitter-empty-box {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.stereo-splitter-empty-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+}
+
+.stereo-splitter-light .stereo-splitter-empty-label {
+    color: rgba(40, 40, 40, 0.60);
+}

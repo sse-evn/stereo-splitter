@@ -1,0 +1,14 @@
+{
+  "name": "Stereo Splitter",
+  "description": "Независимая маршрутизация звука приложений в левый (LEFT), правый (RIGHT) или оба (STEREO) канала наушников прямо из меню Quick Settings.",
+  "uuid": "stereo-splitter@evn.local",
+  "author": "evn",
+  "shell-version": [
+    "46"
+  ],
+  "session-modes": [
+    "user",
+    "unlock-dialog"
+  ],
+  "version": 1
+}
